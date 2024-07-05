@@ -14,15 +14,60 @@ body{
 main{
   display: flex;
   justify-content: center;
+  flex-direction: column;
+  align-items: center;
   
   
 }
 
+/* header and navbar styles  */
+header .navbar{
+  display: flex;
+  /* width: 1880px; */
+  align-content: center;
+  align-items: center;
+  justify-content: space-between;
+  height: 94px;
+  margin-top: 0;
+  background: #562EFF;
+}
+.navbar .logo{
+  display: flex;
+  gap: 16px;
+  margin-left: 285px;
+}
+
+.navbar .logo img{
+  
+  width: 40.424px;
+  height: 51px;
+  margin-top: 26px;
+}
+.navbar .logo .logo-title{
+  color: #FFF;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  margin-top: 33px;
+}
+.navbar .anchors{
+  margin-right: 289px;
+  display: flex;
+  gap: 35px;
+  align-items: center;
+}
+.navbar .anchors a{
+  text-decoration: none;
+  color: #FFF;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+}
 /* top player styles  */
 .container{
   background-color: #ffffff;
   width: 870px;
- 
+  border-radius: 5px;
   padding: 30px;
   margin-top: 130px;
 
@@ -106,3 +151,73 @@ hr{
   font-style: normal;
   font-weight: 400;
 }
+
+
+/* latest courses styles  */
+.latest-courses-container{
+  margin-top: 21px;
+  width: 870px;
+  padding: 30px;
+  border-radius: 5px;
+  background: #FFF;
+}
+
+
+.courses{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  grid-column-gap: 23px;
+}
+
+
+.course{
+  width: 252.423px;
+  
+  fill: #FFF;
+}
+
+.courses .course .course-banner img{
+  width: 266px;
+  height: 141px;
+}
+.course-info .course-author{
+  color: #ED6B4F;
+  font-family: Roboto;
+  font-size: 14.691px;
+  font-style: normal;
+  font-weight: 400;
+}
+.course-info .ratings-and-duration{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.ratings-and-duration .ratings .fa-star.filled{
+  color: #FFC014;
+
+}
+
+.ratings-and-duration .ratings .fa-star.empty{
+  color: #AEAEAE
+
+}
+.ratings-and-duration p{
+  color: #A2A2A2;
+  font-size: 14.691px;
+  font-style: normal;
+  font-weight: 400;
+}
+
+.ratings-and-duration .duration{
+  padding: 10px;
+  border-radius: 14.691px;
+  background: #FEE5DF;
+  color: #FF4A60;
+  
+}
+.ratings-and-duration .duration .fa-clock{
+    color: #FF4A60;
+}
+
+
