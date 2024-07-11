@@ -23,12 +23,11 @@ main{
 /* header and navbar styles  */
 header .navbar{
   display: flex;
-  /* width: 1880px; */
   align-content: center;
   align-items: center;
   justify-content: space-between;
   height: 94px;
-  margin-top: 0;
+  margin-top: 0px;
   background: #562EFF;
 }
 .navbar .logo{
@@ -220,4 +219,41 @@ hr{
     color: #FF4A60;
 }
 
+
+/* RESPONSIVE DESIGN  */
+
+/* smaller phones  */
+@media only screen and (max-width: 480px){
+  .navbar{
+    /* display: inline; */
+    background: #562EFF;
+    /* width: 100%; */
+  }
+  .navbar .logo{
+    margin-left: 0;
+  }
+  .navbar .anchors{
+    display: none;
+  }
+  .section-title{
+    text-align: center;
+  }
+  .players{
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .player{
+    flex-direction: column;
+  }
+  .blogs{
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .blog{
+    justify-content: center;
+  }
+  .courses{
+    grid-template-columns: repeat(1, 1fr);
+    grid-row-gap: 23px;
+    justify-items: center;
+  }
+}
 
