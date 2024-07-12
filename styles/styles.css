@@ -295,3 +295,32 @@ hr{
   }
   
 }
+
+/* LAPTOP RESPPONSIVE  */
+@media only screen and (min-width:769px) and (max-width:1279px) {
+  
+  .navbar .anchors{
+    display: none;
+  }
+  .section-title{
+    text-align: center;
+  }
+  .players{
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .player{
+    flex-direction: column;
+  }
+  .blogs{
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .blog{
+    justify-content: center;
+  }
+  .courses{
+    grid-template-columns: repeat(1, 1fr);
+    grid-row-gap: 23px;
+    justify-items: center;
+  }
+  
+}
